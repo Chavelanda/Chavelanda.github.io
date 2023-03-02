@@ -223,7 +223,7 @@ a.anchor {
 }
 
 .title_container_i {
-  grid-column: 1 / span 7;
+  grid-column: 1 / span 8;
   grid-row: 1;
   align-self: end;
   padding: 0px 20px;
@@ -376,10 +376,10 @@ a.anchor {
   }
 
   .title_container {
-    align-self: center;
+    place-self: center;
   }
   .title_container_i {
-    align-self: center;
+    place-self: center;
   }
 
   .txt_container {
@@ -393,6 +393,9 @@ a.anchor {
     padding: 0px 20px;
   }
 
+  .liner2 {
+    justify-content: center;
+  }
   .liner2::after {
     display: none;
   }
