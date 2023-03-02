@@ -84,12 +84,21 @@
 }
 
 #header_4 {
-  padding-bottom: 30px;
   grid-column: 1 / span 11;
 }
 
 #header_4 a {
     color: white;
+}
+
+#scroll {
+  margin: 0px;
+  font-size: small;
+  font-weight: bold;
+}
+
+#header_5 {
+  grid-column: 1 / span 11;
 }
 
 #arrow {
@@ -320,10 +329,3 @@ a.anchor {
 /* ---------------------------------------------------------- */
 /* RESPONSIVE DESIGN */
 /* ---------------------------------------------------------- */
-
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
-  #scroll {
-    visibility: hidden;
-  }
-}
