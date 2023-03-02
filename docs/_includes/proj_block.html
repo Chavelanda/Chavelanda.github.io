@@ -1,9 +1,11 @@
 <div class="proj_block" style="background-color: {{include.color}}">
-  <div class="column_img">
+  <div class="img_container{{ include.inverted }}">
     <img class="proj_img" src="{{ include.image }}"/>
   </div>
-  <div class="column_txt">
+  <div class="title_container{{ include.inverted }}">
     <p class="proj_title liner2" style="color: {{include.color_text}}">{{include.title}}</p>
+  </div>
+  <div class="txt_container{{ include.inverted }}">
     <p style="color: {{include.color_text}}">
       {{include.content}}
       <a class="github_link" href="{{include.link}}">GitHub project</a>
