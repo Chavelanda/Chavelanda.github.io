@@ -6,12 +6,20 @@
         <p class="project-name" id="project-name">{{ site.title | default: site.title | default: site.github.repository_name }}</h1>
         <h2 class="project-tagline" id="project-tagline">{{ site.description | default: site.description | default: site.github.project_tagline }}</h2>
     </div>
-    <div id="header_3">
-        <a href="#about" class="btn">About</a>
-        <a href="#projects" class="btn">Projects</a>
+    <div class="btn_container" id="about_h">
+      <a href="#about" class="btn">About</a>
     </div>
+    <div class="btn_container" id="projects_h">
+      <a href="#projects" class="btn">Projects</a>
+    </div>
+    <div class="btn_container" id="contacts_h">
+      <a href="#contacts" class="btn">Contacts</a>
+    </div>
+
     <div id="header_4">
+        <a href="#about">
         <span id="arrow"></span>
-        <h5>scroll</h5>
+        <h5 id="scroll">scroll</h5>
+        </a>
     </div>
 </header>
