@@ -71,15 +71,15 @@
   font-size: small;
 }
 
-#about_h {
+#btn_1 {
   grid-column: 5;
 }
 
-#projects_h {
+#btn_2 {
   grid-column: 6;
 }
 
-#contacts_h {
+#btn_3 {
   grid-column: 7;
 }
 
@@ -176,6 +176,50 @@ a.anchor {
 }
 
 /* ---------------------------------------------------------- */
+/* ABOUT STYLE */
+/* ---------------------------------------------------------- */
+
+.about {
+  display: grid;
+  align-items: center;
+  grid-template-columns:  repeat(12, 1fr);
+  column-gap: 10px;
+  margin: 0;
+  padding: 0px 60px 0px 60px;
+  width: 100%;
+}
+
+.about_image_1 {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  place-self: center;
+  padding: 20px;
+}
+
+.txt_about {
+  grid-column: 5 / span 8;
+  grid-row: 1;
+  align-self: start;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.about_image_2 {
+  grid-column: 1 / span 12;
+  grid-row: 2;
+  place-self: center;
+  width: 100%;
+  padding: 20px;
+}
+
+#about_image {
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* ---------------------------------------------------------- */
 /* PROJECT BLOCK STYLE */
 /* ---------------------------------------------------------- */
 
@@ -258,6 +302,34 @@ a.anchor {
 
 
 /* ---------------------------------------------------------- */
+/* CONTACTS */
+/* ---------------------------------------------------------- */
+.contact {
+  display: grid;
+  align-items: center;
+  grid-template-columns:  repeat(12, 1fr);
+  column-gap: 10px;
+  margin: 0;
+  padding: 0px 60px 0px 60px;
+  width: 100%;
+}
+
+.contacts_liner1 {
+  grid-column: 4 / span 6;
+  grid-row: 1;
+}
+
+.github {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.linkedin {
+  grid-column: 10 ;
+  grid-row: 1;
+}
+
+/* ---------------------------------------------------------- */
 /* LINERS */
 /* ---------------------------------------------------------- */
 
@@ -338,7 +410,7 @@ a.anchor {
 /* ---------------------------------------------------------- */
 
 .site-footer {
-  margin: 0px;
+  margin: 20px 0px 0px 0px;
   padding: 0px;
 }
 
@@ -402,5 +474,30 @@ a.anchor {
 
   .liner4 {
     display: block;
+  }
+
+  .about_image_1 {
+    grid-column: 1 / span 12;
+  }
+
+  .txt_about {
+    grid-column: 1 / span 12;
+    grid-row: 2;
+  }
+
+  .about_image_2 {
+    grid-row: 3;
+  }
+
+  #about_image {
+    object-fit: cover;
+  }
+
+  .github {
+    grid-column: 2 / span 3;
+  }
+
+  .linkedin {
+    grid-column: 9 / span 3;
   }
 }

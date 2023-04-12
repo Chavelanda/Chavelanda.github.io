@@ -7,16 +7,14 @@ function scrollFunction() {
     if (x.matches) {
       document.getElementById("header_1").style.gridColumn = "2 / span 3";
       document.getElementById("header_2").style.display = "none";
-      document.getElementById("about_h").style.gridColumn = "8";
-      document.getElementById("projects_h").style.gridColumn = "9";
-      document.getElementById("contacts_h").style.gridColumn = "10";
       } else {
       document.getElementById("header_1").style.gridColumn = "1 / span 3";
       document.getElementById("header_2").style.gridColumn = "4 / span 3";
-      document.getElementById("about_h").style.gridColumn = "8";
-      document.getElementById("projects_h").style.gridColumn = "9";
-      document.getElementById("contacts_h").style.gridColumn = "10";
     }
+
+    document.getElementById("btn_1").style.gridColumn = "8";
+    document.getElementById("btn_2").style.gridColumn = "9";
+    document.getElementById("btn_3").style.gridColumn = "10";
 
     document.getElementById("header").style.height = "100px";
     document.getElementById("header_4").style.display = "none";
@@ -33,9 +31,9 @@ function scrollFunction() {
     document.getElementById("header_1").style.gridColumn = "1 / span 11";
     document.getElementById("header_2").style.display = "block";
     document.getElementById("header_2").style.gridColumn = "1 / span 11";
-    document.getElementById("about_h").style.gridColumn = "5";
-    document.getElementById("projects_h").style.gridColumn = "6";
-    document.getElementById("contacts_h").style.gridColumn = "7";
+    document.getElementById("btn_1").style.gridColumn = "5";
+    document.getElementById("btn_2").style.gridColumn = "6";
+    document.getElementById("btn_3").style.gridColumn = "7";
     document.getElementById("header_4").style.display = "revert";
     document.getElementById("header_5").style.display = "revert";
 
