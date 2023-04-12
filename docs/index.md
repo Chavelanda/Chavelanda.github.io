@@ -2,12 +2,9 @@
 layout: default
 ---
 
-<a class="anchor" id="about"></a>
-<p class="sect_title liner1">About</p>
-
 <a class="anchor" id="projects"></a>
-<p class="sect_title liner1">Projects</p>
 
+<p class="sect_title liner1">Projects</p>
 {% include
   proj_block.html
   image="assets/img/weli.png"
@@ -19,7 +16,7 @@ layout: default
 {% include
   proj_block.html
   image="assets/img/VLSI.png"
-  title="VLSI multiparadigm solver"
+  title="VLSI multi-paradigm solver"
   link="https://github.com/Chavelanda/VLSI-Multi-Paradigm-Solver"
   inverted="_i"
   content="Very large-scale integration (VLSI) is the process of integrating or embedding hundreds of thousands of transistors on a single silicon semiconductor microchip. This is the project work of the Combinatorial Decision Making and Optimization course of the Master's degree in Artificial Intelligence of the Univeristy of Bologna. The same problem has been adressed using four different paradigms: CP, SAT, SMT, MIP." %}
@@ -40,5 +37,17 @@ layout: default
   inverted="_i"
   content="As project for the Languages and Algorithms for Artificial Intelligence course, it is proposed a Prolog implementation of the famous game Connect 4. It has been developed an Intelligent Agent that is able to play against a skilled human player. To decide its moves, the agent uses the minimax algorithm with Alpha-Beta pruning and an heuristic specifically designed for this project." %}
 
-  <!-- color='#606c71' -->
-  <!-- color_text='#ffffff' -->
+
+
+  <a class="anchor" id="about"></a>
+  <p class="sect_title liner1">About me</p>
+  {% include
+    about.html
+  %}
+
+
+  <a class="anchor" id="contacts"></a>
+  <p class="sect_title liner1">Contacts</p>
+  {% include
+    contact.html
+  %}
